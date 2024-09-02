@@ -13,7 +13,7 @@ oil_WTI = yf.Ticker("CL=F")
 hist_data = oil_WTI.history(period="2y")
 
 # Print the historical data to the terminal
-print("August 31, 2023 -- August 31, 2024 WTI Crude Oil Prices")
+print("August 31, 2022 -- August 31, 2024 WTI Crude Oil Prices")
 pd.set_option('display.max_rows', None)
 print(hist_data)
 
@@ -23,7 +23,7 @@ plt.plot(hist_data.index, hist_data['Open'], label='Opening Price', color='red')
 plt.plot(hist_data.index, hist_data['Close'], label='Closing Price', color='blue')
 plt.xlabel('Date')
 plt.ylabel('Price (USD)')
-plt.title('WTI Crude Oil Prices (August 31, 2023 -- August 31, 2024)')
+plt.title('WTI Crude Oil Prices (August 31, 2022 -- August 31, 2024)')
 plt.legend()
 plt.grid(True)
 plt.show()
